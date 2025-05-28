@@ -1,0 +1,6 @@
+VehicleId,VehicleType,InitialLoad,RouteSequence,ClientsServed,DemandSatisfied,ArrivalTimes,Resup,ResupAmounts,Distance,Time,Cost
+V0,Large Truck,80,D1-S0-C12-C5-C4-C0-D1,4,8-17-15-30,09:34-13:44-15:06-20:08,1,0,363.11,272.33,363.11
+V1,Medium Truck,60,D1-S0-S6-C9-C6-D1-C2,3,9-12-22,13:22-13:47-33:02,2,0,76.24,57.18,76.24
+V2,Medium Truck,50,D1-C11-S5-S1-D1-C3-C1,3,7-18-25,00:01-14:54-20:38,2,0,18.00,13.50,18.00
+V3,Small Truck,20,D1-S0-S2-S10-D1-C7-C10,2,10-10,21:29-33:05,3,0,244.87,183.65,244.87
+V4,Small Truck,30,D1-S0-C13-C8-D1,2,10-11,08:58-09:35,1,0,99.40,74.55,99.40

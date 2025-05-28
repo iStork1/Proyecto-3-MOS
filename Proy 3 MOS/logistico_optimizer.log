@@ -1,0 +1,2256 @@
+2025-05-08 13:13:01,997 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 13:20:51,345 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 13:51:13,234 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 13:56:24,864 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 13:59:37,932 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 13:59:50,445 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 16:48:36,633 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 17:38:01,791 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 17:47:10,787 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 17:49:25,277 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 17:49:39,208 - __main__ - ERROR - API key no encontrada. Config˙rala en el archivo .env
+2025-05-08 17:50:47,270 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 17:50:47,339 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 17:50:47,372 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 17:50:47,410 - __main__ - INFO - 
+==================================================
+2025-05-08 17:50:47,411 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 17:50:47,412 - __main__ - INFO - ==================================================
+2025-05-08 17:50:47,413 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:00.142991
+2025-05-08 18:12:01,731 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 18:12:01,737 - __main__ - ERROR - Error procesando caso 1: Error cargando clients_path: Faltan columnas en clients_path: ['City/Municipality']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 163, in load_data
+    raise ValueError(f"Faltan columnas en {file_key}: {missing_cols}")
+ValueError: Faltan columnas en clients_path: ['City/Municipality']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 272, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 175, in load_data
+    raise ValueError(f"Error cargando {file_key}: {str(e)}")
+ValueError: Error cargando clients_path: Faltan columnas en clients_path: ['City/Municipality']
+2025-05-08 18:12:01,744 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 18:12:01,764 - __main__ - ERROR - Error procesando caso 2: Error cargando vehicles_path: Faltan columnas en vehicles_path: ['VehicleType']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 163, in load_data
+    raise ValueError(f"Faltan columnas en {file_key}: {missing_cols}")
+ValueError: Faltan columnas en vehicles_path: ['VehicleType']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 272, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 175, in load_data
+    raise ValueError(f"Error cargando {file_key}: {str(e)}")
+ValueError: Error cargando vehicles_path: Faltan columnas en vehicles_path: ['VehicleType']
+2025-05-08 18:12:01,767 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 18:12:01,794 - __main__ - ERROR - Error procesando caso 3: Error cargando vehicles_path: Faltan columnas en vehicles_path: ['VehicleType']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 163, in load_data
+    raise ValueError(f"Faltan columnas en {file_key}: {missing_cols}")
+ValueError: Faltan columnas en vehicles_path: ['VehicleType']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 272, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 175, in load_data
+    raise ValueError(f"Error cargando {file_key}: {str(e)}")
+ValueError: Error cargando vehicles_path: Faltan columnas en vehicles_path: ['VehicleType']
+2025-05-08 18:12:01,799 - __main__ - INFO - 
+==================================================
+2025-05-08 18:12:01,800 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 18:12:01,803 - __main__ - INFO - ==================================================
+2025-05-08 18:12:01,805 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:00.075006
+2025-05-08 18:58:35,750 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 18:58:35,797 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 18:58:35,798 - __main__ - ERROR - Error procesando caso 1: 'LogistiCoRouteOptimizer' object has no attribute 'build_model'
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 334, in main
+    optimizer.build_model(case)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LogistiCoRouteOptimizer' object has no attribute 'build_model'
+2025-05-08 18:58:35,805 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 18:58:35,832 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 18:58:35,832 - __main__ - ERROR - Error procesando caso 2: 'LogistiCoRouteOptimizer' object has no attribute 'build_model'
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 334, in main
+    optimizer.build_model(case)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LogistiCoRouteOptimizer' object has no attribute 'build_model'
+2025-05-08 18:58:35,838 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 18:58:35,898 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 18:58:35,901 - __main__ - ERROR - Error procesando caso 3: 'LogistiCoRouteOptimizer' object has no attribute 'build_model'
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 334, in main
+    optimizer.build_model(case)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LogistiCoRouteOptimizer' object has no attribute 'build_model'
+2025-05-08 18:58:35,932 - __main__ - INFO - 
+==================================================
+2025-05-08 18:58:35,933 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 18:58:35,934 - __main__ - INFO - ==================================================
+2025-05-08 18:58:35,935 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:00.185003
+2025-05-08 22:28:10,932 - __main__ - ERROR - ERROR CRÕTICO: 'LogistiCoRouteOptimizer' object has no attribute '_load_cache'
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 743, in main
+    optimizer = LogistiCoRouteOptimizer()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 49, in __init__
+    self._load_cache()
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'LogistiCoRouteOptimizer' object has no attribute '_load_cache'
+2025-05-08 22:28:10,937 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:00.006006
+2025-05-08 22:30:40,027 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 22:30:40,119 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 22:30:40,126 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 22:30:40,141 - __main__ - ERROR - Error procesando caso 1: 'LogistiCoRouteOptimizer' object has no attribute '_get_distance_duration'
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 770, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 276, in build_model
+    self._prepare_nodes()._compute_distance_matrix()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 256, in _compute_distance_matrix
+    distance, duration = self._get_distance_duration(coords[i], coords[j])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LogistiCoRouteOptimizer' object has no attribute '_get_distance_duration'
+2025-05-08 22:30:40,147 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 22:30:40,206 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 22:30:40,207 - __main__ - ERROR - Error procesando caso 2: 'Latitude'
+Traceback (most recent call last):
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Latitude'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 770, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 276, in build_model
+    self._prepare_nodes()._compute_distance_matrix()
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 199, in _prepare_nodes
+    'Latitude': row['Latitude'],
+                ~~~^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Latitude'
+2025-05-08 22:30:40,219 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 22:30:40,325 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 22:30:40,326 - __main__ - ERROR - Error procesando caso 3: 'Latitude'
+Traceback (most recent call last):
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Latitude'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 770, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 276, in build_model
+    self._prepare_nodes()._compute_distance_matrix()
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 199, in _prepare_nodes
+    'Latitude': row['Latitude'],
+                ~~~^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Latitude'
+2025-05-08 22:30:40,330 - __main__ - INFO - 
+==================================================
+2025-05-08 22:30:40,332 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 22:30:40,332 - __main__ - INFO - ==================================================
+2025-05-08 22:30:40,333 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:00.305960
+2025-05-08 22:40:29,747 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 22:40:29,782 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 22:40:29,791 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 22:40:30,714 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:30,716 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.687820646838871,-74.07557103763986, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:30,917 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:30,918 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.70949446000624,-74.10708524062704, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:31,117 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:31,118 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.605029068682624,-74.09727965657427, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:31,317 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:31,318 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.648463876533332,-74.16464148202755, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:31,519 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:31,520 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.662137416953968,-74.12083799988112, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:31,718 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:31,719 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.697499030379109,-74.02213076607309, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:31,919 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:31,921 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.649416884236942,-74.17207549744595, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:32,121 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:32,122 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.606310650273935,-74.15615257246444, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:32,320 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:32,321 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.557379705282216,-74.09041145358674, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:32,517 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:32,517 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.591594072172954,-74.17802255204528, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:32,715 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:32,716 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.7564172406324055,-74.1015410917749, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:32,914 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:32,915 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.646217006050524,-74.09690889182339, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:33,116 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:33,117 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.725912125314368,-74.1219200708342, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:33,317 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:33,318 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.604168478560718,-74.0942948461378, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:33,519 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:33,520 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.557320898243896,-74.11138839002187, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:33,720 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:33,721 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.615869066082658,-74.12463941285208, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:33,920 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:33,922 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.656402930181292,-74.12456164551857, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:34,122 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:34,123 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.706188309535041,-74.04990580408855, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:34,321 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:34,322 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.746624762561149,-74.121866801394, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:34,530 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:34,532 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.746517184687941,-74.02454895778163, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:34,731 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:34,732 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.625425626584072,-74.08683592702927, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:34,931 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:34,933 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.731406773645735,-74.11652648751144, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:35,132 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:35,133 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.577489966973782,-74.12629327283491, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:35,333 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:35,334 - __main__ - WARNING - API fallÛ para 4.59795431125545,-74.09893796560621-4.743359,-74.153536, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:35,534 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:35,535 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.59795431125545,-74.09893796560621, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:35,735 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:35,736 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.70949446000624,-74.10708524062704, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:35,934 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:35,936 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.605029068682624,-74.09727965657427, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:36,134 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:36,135 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.648463876533332,-74.16464148202755, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:36,334 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:36,335 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.662137416953968,-74.12083799988112, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:36,535 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:36,536 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.697499030379109,-74.02213076607309, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:36,734 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:36,735 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.649416884236942,-74.17207549744595, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:36,932 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:36,933 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.606310650273935,-74.15615257246444, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:40:37,132 - __main__ - ERROR - Fallo en peticiÛn API despuÈs de 7 intentos
+2025-05-08 22:40:37,133 - __main__ - WARNING - API fallÛ para 4.687820646838871,-74.07557103763986-4.557379705282216,-74.09041145358674, usando haversine. Error: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:42:32,766 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 22:42:32,775 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 22:42:32,782 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 22:42:32,796 - __main__ - INFO - Progreso: 2/25 (8.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,805 - __main__ - INFO - Progreso: 4/25 (16.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,816 - __main__ - INFO - Progreso: 6/25 (24.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,827 - __main__ - INFO - Progreso: 8/25 (32.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,839 - __main__ - INFO - Progreso: 10/25 (40.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,853 - __main__ - INFO - Progreso: 12/25 (48.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,863 - __main__ - INFO - Progreso: 14/25 (56.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,873 - __main__ - INFO - Progreso: 16/25 (64.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,883 - __main__ - INFO - Progreso: 18/25 (72.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,893 - __main__ - INFO - Progreso: 20/25 (80.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,903 - __main__ - INFO - Progreso: 22/25 (88.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,914 - __main__ - INFO - Progreso: 24/25 (96.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:42:32,923 - __main__ - INFO - Matriz calculada en 0:00:00.141023
+2025-05-08 22:42:33,480 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 22:42:34,449 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.967300
+2025-05-08 22:42:34,450 - __main__ - ERROR - Error al resolver: 'numpy.float64' object has no attribute 'value'
+2025-05-08 22:42:34,450 - __main__ - WARNING - Caso 1 no obtuvo soluciÛn Ûptima
+2025-05-08 22:42:34,450 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 22:42:34,453 - __main__ - ERROR - Error procesando caso 2: Error cargando datos caso 2: Archivo caso2_clientes.csv necesita las columnas: Latitude, Longitude
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 161, in load_data
+    clients = validate_coordinates(clients, 'caso2_clientes.csv')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 129, in validate_coordinates
+    raise ValueError(f"Archivo {name} necesita las columnas: {', '.join(missing_cols)}")
+ValueError: Archivo caso2_clientes.csv necesita las columnas: Latitude, Longitude
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 833, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 191, in load_data
+    raise ValueError(f"Error cargando datos caso 2: {str(e)}")
+ValueError: Error cargando datos caso 2: Archivo caso2_clientes.csv necesita las columnas: Latitude, Longitude
+2025-05-08 22:42:34,457 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 22:42:34,459 - __main__ - ERROR - Error procesando caso 3: Error cargando datos caso 3: Archivo caso3_clientes.csv necesita las columnas: Latitude, Longitude
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 198, in load_data
+    clients = validate_coordinates(clients, 'caso3_clientes.csv')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 129, in validate_coordinates
+    raise ValueError(f"Archivo {name} necesita las columnas: {', '.join(missing_cols)}")
+ValueError: Archivo caso3_clientes.csv necesita las columnas: Latitude, Longitude
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 833, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\BaseCVRP.py", line 240, in load_data
+    raise ValueError(f"Error cargando datos caso 3: {str(e)}")
+ValueError: Error cargando datos caso 3: Archivo caso3_clientes.csv necesita las columnas: Latitude, Longitude
+2025-05-08 22:42:34,462 - __main__ - INFO - 
+==================================================
+2025-05-08 22:42:34,463 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 22:42:34,463 - __main__ - INFO - ==================================================
+2025-05-08 22:42:34,464 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:01.697351
+2025-05-08 22:43:59,555 - __main__ - INFO - Cargada cach√© con 600 entradas
+2025-05-08 22:43:59,556 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 22:43:59,564 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 22:43:59,573 - __main__ - INFO - Llamando distance_matrix para 25 nodos‚Ä¶
+2025-05-08 22:44:00,353 - __main__ - ERROR - Fallo en petici√≥n API despu√©s de 7 intentos
+2025-05-08 22:44:00,353 - __main__ - ERROR - ‚ùå Error procesando caso 1: 403 ({'error': 'Access to this API has been disallowed'})
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 885, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 290, in build_model
+    self._prepare_nodes()._compute_distance_matrix()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 268, in _compute_distance_matrix
+    matrix = self._api_request_with_retry(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 100, in _api_request_with_retry
+    raise last_exception if last_exception else Exception(
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 78, in _api_request_with_retry
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\openrouteservice\client.py", line 299, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\openrouteservice\distance_matrix.py", line 116, in distance_matrix
+    return client.request("/v2/matrix/" + profile + '/json', {}, post_json=params, dry_run=dry_run)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\openrouteservice\client.py", line 204, in request
+    result = self._get_body(response)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\openrouteservice\client.py", line 242, in _get_body
+    raise exceptions.ApiError(
+openrouteservice.exceptions.ApiError: 403 ({'error': 'Access to this API has been disallowed'})
+2025-05-08 22:44:00,364 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 22:44:00,367 - __main__ - ERROR - ‚ùå Error procesando caso 2: Faltan columnas en clients_path: ['Latitude', 'Longitude']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 882, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 190, in load_data
+    raise ValueError(f"Faltan columnas en {path_key}: {missing}")
+ValueError: Faltan columnas en clients_path: ['Latitude', 'Longitude']
+2025-05-08 22:44:00,370 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 22:44:00,374 - __main__ - ERROR - ‚ùå Error procesando caso 3: Faltan columnas en clients_path: ['Latitude', 'Longitude']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 882, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 190, in load_data
+    raise ValueError(f"Faltan columnas en {path_key}: {missing}")
+ValueError: Faltan columnas en clients_path: ['Latitude', 'Longitude']
+2025-05-08 22:44:00,376 - __main__ - INFO - 
+==================================================
+2025-05-08 22:44:00,377 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 22:44:00,378 - __main__ - INFO - ==================================================
+2025-05-08 22:44:00,378 - __main__ - INFO - 
+Tiempo total de ejecuci√≥n: 0:00:00.824077
+2025-05-08 22:44:19,469 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 22:44:19,469 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 22:44:19,477 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 22:44:19,483 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 22:44:19,487 - __main__ - INFO - Progreso: 2/25 (8.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,488 - __main__ - INFO - Progreso: 4/25 (16.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,488 - __main__ - INFO - Progreso: 6/25 (24.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,489 - __main__ - INFO - Progreso: 8/25 (32.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,490 - __main__ - INFO - Progreso: 10/25 (40.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,491 - __main__ - INFO - Progreso: 12/25 (48.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,491 - __main__ - INFO - Progreso: 14/25 (56.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,492 - __main__ - INFO - Progreso: 16/25 (64.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,493 - __main__ - INFO - Progreso: 18/25 (72.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,493 - __main__ - INFO - Progreso: 20/25 (80.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,494 - __main__ - INFO - Progreso: 22/25 (88.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,495 - __main__ - INFO - Progreso: 24/25 (96.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:44:19,496 - __main__ - INFO - Matriz calculada en 0:00:00.013006
+2025-05-08 22:44:20,017 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 22:44:20,669 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.650218
+2025-05-08 22:44:20,670 - __main__ - ERROR - Error al resolver: 'numpy.float64' object has no attribute 'value'
+2025-05-08 22:44:20,671 - __main__ - WARNING - Caso 1 no obtuvo soluciÛn Ûptima
+2025-05-08 22:44:20,672 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 22:44:20,676 - __main__ - ERROR - Error procesando caso 2: Error cargando datos caso 2: Archivo caso2_clientes.csv necesita las columnas: Latitude, Longitude
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 161, in load_data
+    clients = validate_coordinates(clients, 'caso2_clientes.csv')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 129, in validate_coordinates
+    raise ValueError(f"Archivo {name} necesita las columnas: {', '.join(missing_cols)}")
+ValueError: Archivo caso2_clientes.csv necesita las columnas: Latitude, Longitude
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 833, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 191, in load_data
+    raise ValueError(f"Error cargando datos caso 2: {str(e)}")
+ValueError: Error cargando datos caso 2: Archivo caso2_clientes.csv necesita las columnas: Latitude, Longitude
+2025-05-08 22:44:20,684 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 22:44:20,694 - __main__ - ERROR - Error procesando caso 3: Error cargando datos caso 3: Archivo caso3_clientes.csv necesita las columnas: Latitude, Longitude
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 198, in load_data
+    clients = validate_coordinates(clients, 'caso3_clientes.csv')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 129, in validate_coordinates
+    raise ValueError(f"Archivo {name} necesita las columnas: {', '.join(missing_cols)}")
+ValueError: Archivo caso3_clientes.csv necesita las columnas: Latitude, Longitude
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 833, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 240, in load_data
+    raise ValueError(f"Error cargando datos caso 3: {str(e)}")
+ValueError: Error cargando datos caso 3: Archivo caso3_clientes.csv necesita las columnas: Latitude, Longitude
+2025-05-08 22:44:20,699 - __main__ - INFO - 
+==================================================
+2025-05-08 22:44:20,700 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 22:44:20,701 - __main__ - INFO - ==================================================
+2025-05-08 22:44:20,703 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:01.235734
+2025-05-08 22:46:32,080 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 22:46:32,081 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 22:46:32,090 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 22:46:32,098 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 22:46:32,102 - __main__ - INFO - Progreso: 2/25 (8.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,103 - __main__ - INFO - Progreso: 4/25 (16.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,104 - __main__ - INFO - Progreso: 6/25 (24.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,105 - __main__ - INFO - Progreso: 8/25 (32.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,106 - __main__ - INFO - Progreso: 10/25 (40.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,106 - __main__ - INFO - Progreso: 12/25 (48.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,107 - __main__ - INFO - Progreso: 14/25 (56.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,108 - __main__ - INFO - Progreso: 16/25 (64.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,109 - __main__ - INFO - Progreso: 18/25 (72.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,110 - __main__ - INFO - Progreso: 20/25 (80.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,111 - __main__ - INFO - Progreso: 22/25 (88.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,112 - __main__ - INFO - Progreso: 24/25 (96.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:46:32,114 - __main__ - INFO - Matriz calculada en 0:00:00.015999
+2025-05-08 22:46:32,734 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 22:46:33,422 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.687665
+2025-05-08 22:46:33,425 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 22:46:33,547 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 22:46:33,548 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 22:46:33,548 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 22:46:33,559 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 22:46:33,559 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 22:46:33,573 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 22:46:33,574 - __main__ - INFO - 
+==================================================
+2025-05-08 22:46:33,574 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 22:46:33,575 - __main__ - INFO - ==================================================
+2025-05-08 22:46:33,575 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:01.495790
+2025-05-08 22:58:41,249 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 22:58:41,249 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 22:58:41,257 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 22:58:41,263 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 22:58:41,267 - __main__ - INFO - Progreso: 2/25 (8.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,268 - __main__ - INFO - Progreso: 4/25 (16.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,268 - __main__ - INFO - Progreso: 6/25 (24.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,269 - __main__ - INFO - Progreso: 8/25 (32.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,269 - __main__ - INFO - Progreso: 10/25 (40.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,270 - __main__ - INFO - Progreso: 12/25 (48.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,270 - __main__ - INFO - Progreso: 14/25 (56.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,271 - __main__ - INFO - Progreso: 16/25 (64.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,272 - __main__ - INFO - Progreso: 18/25 (72.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,272 - __main__ - INFO - Progreso: 20/25 (80.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,273 - __main__ - INFO - Progreso: 22/25 (88.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,274 - __main__ - INFO - Progreso: 24/25 (96.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:41,275 - __main__ - INFO - Matriz calculada en 0:00:00.012009
+2025-05-08 22:58:41,822 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 22:58:42,450 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.626543
+2025-05-08 22:58:42,451 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,D1,D1]
+2025-05-08 22:58:42,452 - __main__ - ERROR - Error al resolver: No value for uninitialized NumericValue object x[V0,D1,D1]
+2025-05-08 22:58:42,453 - __main__ - WARNING - Caso 1 no obtuvo soluciÛn Ûptima
+2025-05-08 22:58:42,453 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 22:58:42,467 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 22:58:42,468 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 22:58:42,489 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 22:58:42,490 - __main__ - INFO - 
+==================================================
+2025-05-08 22:58:42,490 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 22:58:42,491 - __main__ - INFO - ==================================================
+2025-05-08 22:58:42,491 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:01.243382
+2025-05-08 22:58:52,185 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 22:58:52,185 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 22:58:52,194 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 22:58:52,200 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 22:58:52,203 - __main__ - INFO - Progreso: 2/25 (8.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,204 - __main__ - INFO - Progreso: 4/25 (16.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,205 - __main__ - INFO - Progreso: 6/25 (24.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,205 - __main__ - INFO - Progreso: 8/25 (32.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,206 - __main__ - INFO - Progreso: 10/25 (40.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,206 - __main__ - INFO - Progreso: 12/25 (48.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,206 - __main__ - INFO - Progreso: 14/25 (56.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,207 - __main__ - INFO - Progreso: 16/25 (64.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,207 - __main__ - INFO - Progreso: 18/25 (72.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,208 - __main__ - INFO - Progreso: 20/25 (80.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,209 - __main__ - INFO - Progreso: 22/25 (88.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,210 - __main__ - INFO - Progreso: 24/25 (96.0%) | Tiempo restante: 0:00:00
+2025-05-08 22:58:52,211 - __main__ - INFO - Matriz calculada en 0:00:00.011365
+2025-05-08 22:58:52,726 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 22:58:53,362 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.634272
+2025-05-08 22:58:53,365 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,D1,D1]
+2025-05-08 22:58:53,367 - __main__ - ERROR - Error al resolver: No value for uninitialized NumericValue object x[V0,D1,D1]
+2025-05-08 22:58:53,368 - __main__ - WARNING - Caso 1 no obtuvo soluciÛn Ûptima
+2025-05-08 22:58:53,369 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 22:58:53,394 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 22:58:53,407 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 22:58:53,441 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 22:58:53,442 - __main__ - INFO - 
+==================================================
+2025-05-08 22:58:53,445 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 22:58:53,446 - __main__ - INFO - ==================================================
+2025-05-08 22:58:53,447 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:01.262660
+2025-05-08 23:00:03,496 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:00:03,496 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:00:03,506 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:00:03,507 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:00:03,514 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:01:09,625 - __main__ - INFO - Progreso: 2/25 (8.0%) | Tiempo restante: 0:12:40
+2025-05-08 23:02:27,113 - __main__ - INFO - Progreso: 4/25 (16.0%) | Tiempo restante: 0:12:33
+2025-05-08 23:02:28,025 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:02:28,025 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:02:28,033 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:02:28,033 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:02:28,036 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:02:28,041 - __main__ - ERROR - Error procesando caso 1: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 841, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 349, in build_model
+    model = self._build_base_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 366, in _build_base_model
+    model.N = Set(initialize=self.nodes['NodeID'].tolist())
+                             ~~~~~~~~~~^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2025-05-08 23:02:28,044 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:02:28,051 - __main__ - ERROR - Error procesando caso 2: Error cargando datos caso 2: Faltan columnas en caso2_estaciones.csv: ['EstationID', 'FuelCost']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 189, in load_data
+    stations = validate_required_columns(stations, required_cols, 'caso2_estaciones.csv')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 138, in validate_required_columns
+    raise ValueError(f"Faltan columnas en {file_name}: {missing_cols}")
+ValueError: Faltan columnas en caso2_estaciones.csv: ['EstationID', 'FuelCost']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 839, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 209, in load_data
+    raise ValueError(f"Error cargando datos caso 2: {str(e)}")
+ValueError: Error cargando datos caso 2: Faltan columnas en caso2_estaciones.csv: ['EstationID', 'FuelCost']
+2025-05-08 23:02:28,054 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:02:28,063 - __main__ - ERROR - Error procesando caso 3: Error cargando datos caso 3: Faltan columnas en caso3_estaciones.csv: ['EstationID', 'FuelCost']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 232, in load_data
+    stations = validate_required_columns(stations, required_cols, 'caso3_estaciones.csv')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 138, in validate_required_columns
+    raise ValueError(f"Faltan columnas en {file_name}: {missing_cols}")
+ValueError: Faltan columnas en caso3_estaciones.csv: ['EstationID', 'FuelCost']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 839, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 265, in load_data
+    raise ValueError(f"Error cargando datos caso 3: {str(e)}")
+ValueError: Error cargando datos caso 3: Faltan columnas en caso3_estaciones.csv: ['EstationID', 'FuelCost']
+2025-05-08 23:02:28,067 - __main__ - INFO - 
+==================================================
+2025-05-08 23:02:28,067 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:02:28,068 - __main__ - INFO - ==================================================
+2025-05-08 23:02:28,069 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:00.045003
+2025-05-08 23:03:33,514 - __main__ - INFO - Progreso: 6/25 (24.0%) | Tiempo restante: 0:11:04
+2025-05-08 23:05:06,602 - __main__ - WARNING - Error cargando cachÈ: 'LogistiCoRouteOptimizer' object has no attribute 'cache_file'
+2025-05-08 23:05:06,602 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:05:06,609 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:05:06,610 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:05:06,634 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:05:06,636 - __main__ - ERROR - Error procesando caso 1: single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 797, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 302, in build_model
+    self._compute_distance_matrix()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 287, in _compute_distance_matrix
+    self.nodes[self.nodes['NodeID'] == i].iloc[0],
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexing.py", line 1752, in _getitem_axis
+    self._validate_integer(key, axis)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexing.py", line 1685, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+2025-05-08 23:05:06,642 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:05:06,654 - __main__ - ERROR - Error procesando caso 2: Error cargando datos caso 2: Faltan columnas en caso2_vehiculos.csv: ['Type']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 165, in load_data
+    vehicles = validate_required_columns(vehicles, required_cols, 'caso2_vehiculos.csv')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 103, in validate_required_columns
+    raise ValueError(f"Faltan columnas en {file_name}: {missing_cols}")
+ValueError: Faltan columnas en caso2_vehiculos.csv: ['Type']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 795, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 174, in load_data
+    raise ValueError(f"Error cargando datos caso 2: {str(e)}")
+ValueError: Error cargando datos caso 2: Faltan columnas en caso2_vehiculos.csv: ['Type']
+2025-05-08 23:05:06,656 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:05:06,669 - __main__ - ERROR - Error procesando caso 3: Error cargando datos caso 3: Faltan columnas en caso3_vehiculos.csv: ['Type']
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 218, in load_data
+    vehicles = validate_required_columns(vehicles, required_cols, 'caso3_vehiculos.csv')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 103, in validate_required_columns
+    raise ValueError(f"Faltan columnas en {file_name}: {missing_cols}")
+ValueError: Faltan columnas en caso3_vehiculos.csv: ['Type']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 795, in main
+    optimizer.load_data(case, DATA_DIR[case])
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 227, in load_data
+    raise ValueError(f"Error cargando datos caso 3: {str(e)}")
+ValueError: Error cargando datos caso 3: Faltan columnas en caso3_vehiculos.csv: ['Type']
+2025-05-08 23:05:06,672 - __main__ - INFO - 
+==================================================
+2025-05-08 23:05:06,674 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:05:06,674 - __main__ - INFO - ==================================================
+2025-05-08 23:05:06,675 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:00.072920
+2025-05-08 23:05:44,465 - __main__ - INFO - Progreso: 8/25 (32.0%) | Tiempo restante: 0:12:04
+2025-05-08 23:06:15,668 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:06:15,669 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:06:15,678 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:06:15,679 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:06:15,707 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:06:16,219 - pyomo.core - ERROR - Rule failed for Param 'demand' with index 0:
+KeyError: "Index '0' is not valid for indexed component 'demand'"
+2025-05-08 23:06:16,219 - pyomo.core - ERROR - Constructing component 'demand' from data=None failed:
+    KeyError: "Index '0' is not valid for indexed component 'demand'"
+2025-05-08 23:06:16,220 - __main__ - ERROR - Error procesando caso 1: "Index '0' is not valid for indexed component 'demand'"
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 801, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 309, in build_model
+    model = self._build_base_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 332, in _build_base_model
+    model.demand = Param(model.N, initialize=self.nodes['Demand'].tolist())
+    ^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 571, in __setattr__
+    self.add_component(name, val)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 1101, in add_component
+    val.construct(data)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 850, in construct
+    self._construct_from_rule_using_setitem()
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 772, in _construct_from_rule_using_setitem
+    self[index] = rule(block, index)
+    ~~~~^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 692, in __setitem__
+    index = self._validate_index(index)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 870, in _validate_index
+    raise KeyError(
+KeyError: "Index '0' is not valid for indexed component 'demand'"
+2025-05-08 23:06:16,229 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:06:16,253 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:06:16,253 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:06:16,272 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:06:16,273 - __main__ - INFO - 
+==================================================
+2025-05-08 23:06:16,274 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:06:16,274 - __main__ - INFO - ==================================================
+2025-05-08 23:06:16,275 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:00.607022
+2025-05-08 23:06:52,798 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:06:52,799 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:06:52,808 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:06:52,808 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:06:52,832 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:06:53,367 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:06:53,969 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.600885
+2025-05-08 23:06:53,970 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,D1,D1]
+2025-05-08 23:06:53,970 - __main__ - ERROR - Error al resolver: No value for uninitialized NumericValue object x[V0,D1,D1]
+2025-05-08 23:06:53,971 - __main__ - WARNING - Caso 1 no obtuvo soluciÛn Ûptima
+2025-05-08 23:06:53,971 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:06:53,984 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:06:53,985 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:06:53,997 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:06:53,997 - __main__ - INFO - 
+==================================================
+2025-05-08 23:06:53,998 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:06:53,998 - __main__ - INFO - ==================================================
+2025-05-08 23:06:53,999 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:01.201684
+2025-05-08 23:09:45,370 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:09:45,371 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:09:45,388 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:09:45,389 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:09:45,426 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:09:46,216 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:09:46,963 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.745980
+2025-05-08 23:09:46,964 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,D1,D1]
+2025-05-08 23:09:46,966 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V1,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V1,D1,D1]
+2025-05-08 23:09:46,970 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V2,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V2,D1,D1]
+2025-05-08 23:09:46,973 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V3,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V3,D1,D1]
+2025-05-08 23:09:46,975 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V4,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V4,D1,D1]
+2025-05-08 23:09:46,977 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V5,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V5,D1,D1]
+2025-05-08 23:09:46,979 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V6,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V6,D1,D1]
+2025-05-08 23:09:46,982 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V7,D1,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V7,D1,D1]
+2025-05-08 23:09:46,997 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:09:47,118 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:09:47,119 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:09:47,119 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:09:47,130 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:09:47,131 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:09:47,145 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:09:47,145 - __main__ - INFO - 
+==================================================
+2025-05-08 23:09:47,146 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:09:47,146 - __main__ - INFO - ==================================================
+2025-05-08 23:09:47,147 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:01.777592
+2025-05-08 23:10:48,029 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:10:48,029 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:10:48,039 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:10:48,040 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:10:48,081 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:10:48,750 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:10:49,690 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.938589
+2025-05-08 23:10:49,707 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:10:49,839 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:10:49,839 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:10:49,840 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:10:49,853 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:10:49,853 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:10:49,871 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:10:49,872 - __main__ - INFO - 
+==================================================
+2025-05-08 23:10:49,872 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:10:49,873 - __main__ - INFO - ==================================================
+2025-05-08 23:10:49,874 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:01.846131
+2025-05-08 23:12:28,867 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:12:28,868 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:12:28,882 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:12:28,882 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:12:28,933 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:12:29,573 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:12:30,365 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.791123
+2025-05-08 23:12:30,382 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:12:30,526 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:12:30,527 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:12:30,530 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:12:30,551 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:12:30,552 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:12:30,600 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:12:31,607 - __main__ - ERROR - Error procesando caso 2: 'FuelPrice'
+Traceback (most recent call last):
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'FuelPrice'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 833, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 313, in build_model
+    self._build_refuel_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 396, in _build_refuel_model
+    fuel_prices = {row['NodeID']: row['FuelPrice'] for _, row in self.nodes[self.nodes['Type'] == 'station'].iterrows()}
+                                  ~~~^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'FuelPrice'
+2025-05-08 23:12:31,619 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:12:31,642 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:12:31,642 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:12:31,685 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:12:32,694 - __main__ - ERROR - Error procesando caso 3: 'FuelPrice'
+Traceback (most recent call last):
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'FuelPrice'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 833, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 316, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 424, in _build_toll_model
+    model = self._build_refuel_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 396, in _build_refuel_model
+    fuel_prices = {row['NodeID']: row['FuelPrice'] for _, row in self.nodes[self.nodes['Type'] == 'station'].iterrows()}
+                                  ~~~^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'FuelPrice'
+2025-05-08 23:12:32,699 - __main__ - INFO - 
+==================================================
+2025-05-08 23:12:32,700 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:12:32,700 - __main__ - INFO - ==================================================
+2025-05-08 23:12:32,701 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:03.834833
+2025-05-08 23:13:12,724 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:13:12,725 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:13:12,732 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:13:12,733 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:13:12,759 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:13:13,295 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:13:13,791 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.495106
+2025-05-08 23:13:13,805 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:13:13,906 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:13:13,906 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:13:13,907 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:13:13,916 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:13:13,916 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:13:13,942 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:13:14,792 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:13:14,830 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:13:15,033 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.201823
+2025-05-08 23:13:15,034 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,S0,D1]
+2025-05-08 23:13:15,037 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V1,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V1,S0,D1]
+2025-05-08 23:13:15,039 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V2,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V2,S0,D1]
+2025-05-08 23:13:15,040 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V3,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V3,S0,D1]
+2025-05-08 23:13:15,042 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V4,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V4,S0,D1]
+2025-05-08 23:13:15,047 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso2.csv
+2025-05-08 23:13:15,144 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso2.html
+2025-05-08 23:13:15,144 - __main__ - INFO - Caso 2 completado con Èxito
+2025-05-08 23:13:15,145 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:13:15,155 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:13:15,156 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:13:15,181 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:13:16,058 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:13:16,108 - __main__ - ERROR - Error procesando caso 3: 'ToNode'
+Traceback (most recent call last):
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'ToNode'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 836, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 430, in _build_toll_model
+    toll_arcs = [(row['FromNode'], row['ToNode']) for _, row in self.tolls.iterrows()]
+                                   ~~~^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'ToNode'
+2025-05-08 23:13:16,116 - __main__ - INFO - 
+==================================================
+2025-05-08 23:13:16,117 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:13:16,117 - __main__ - INFO - ==================================================
+2025-05-08 23:13:16,118 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:03.394068
+2025-05-08 23:13:59,416 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:13:59,417 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:13:59,427 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:13:59,427 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:13:59,495 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:14:00,196 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:14:00,850 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.652444
+2025-05-08 23:14:00,864 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:14:00,962 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:14:00,963 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:14:00,963 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:14:00,973 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:14:00,973 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:14:00,999 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:14:01,778 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:14:02,108 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:421)
+2025-05-08 23:14:02,111 - pyomo.core - ERROR - Rule failed when generating expression for Constraint fuel_consumption with index ('V0', 'D1', 'C0'):
+PyomoException: Cannot convert non-constant Pyomo numeric value (y[V0,D1,S0]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement. For example,
+    >>> m.x = Var()
+    >>> if not m.x:
+    ...     pass
+would cause this exception.
+2025-05-08 23:14:02,112 - pyomo.core - ERROR - Constructing component 'fuel_consumption' from data=None failed:
+    PyomoException: Cannot convert non-constant Pyomo numeric value (y[V0,D1,S0]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement. For example,
+    >>> m.x = Var()
+    >>> if not m.x:
+    ...     pass
+would cause this exception.
+2025-05-08 23:14:02,114 - __main__ - ERROR - Error procesando caso 2: Cannot convert non-constant Pyomo numeric value (y[V0,D1,S0]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement. For example,
+    >>> m.x = Var()
+    >>> if not m.x:
+    ...     pass
+would cause this exception.
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 859, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 316, in build_model
+    self._build_refuel_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 429, in _build_refuel_model
+    model.fuel_consumption = Constraint(model.V, model.N, model.N, rule=fuel_consumption)
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 571, in __setattr__
+    self.add_component(name, val)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 1101, in add_component
+    val.construct(data)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\constraint.py", line 722, in construct
+    self._setitem_when_not_present(index, rule(block, index))
+                                          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\initializer.py", line 349, in __call__
+    return self._fcn(parent, *idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 427, in fuel_consumption
+    return m.fuel_level[v,j] == m.fuel_level[v,i] - m.distance[i,j] + sum(m.r[v,e] for e in m.S if m.y[v,i,e])
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 427, in <genexpr>
+    return m.fuel_level[v,j] == m.fuel_level[v,i] - m.distance[i,j] + sum(m.r[v,e] for e in m.S if m.y[v,i,e])
+                                                                                                   ~~~^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\expr\numeric_expr.py", line 319, in __bool__
+    raise PyomoException(
+pyomo.common.errors.PyomoException: Cannot convert non-constant Pyomo numeric value (y[V0,D1,S0]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement. For example,
+    >>> m.x = Var()
+    >>> if not m.x:
+    ...     pass
+would cause this exception.
+2025-05-08 23:14:02,128 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:14:02,148 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:14:02,149 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:14:02,192 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:14:02,930 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:14:02,967 - pyomo.core - ERROR - Rule failed when generating expression for Constraint fuel_consumption with index ('V0', 'D1', 'C0'):
+PyomoException: Cannot convert non-constant Pyomo numeric value (y[V0,D1,S0]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement. For example,
+    >>> m.x = Var()
+    >>> if not m.x:
+    ...     pass
+would cause this exception.
+2025-05-08 23:14:02,968 - pyomo.core - ERROR - Constructing component 'fuel_consumption' from data=None failed:
+    PyomoException: Cannot convert non-constant Pyomo numeric value (y[V0,D1,S0]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement. For example,
+    >>> m.x = Var()
+    >>> if not m.x:
+    ...     pass
+would cause this exception.
+2025-05-08 23:14:02,969 - __main__ - ERROR - Error procesando caso 3: Cannot convert non-constant Pyomo numeric value (y[V0,D1,S0]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement. For example,
+    >>> m.x = Var()
+    >>> if not m.x:
+    ...     pass
+would cause this exception.
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 859, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 450, in _build_toll_model
+    model = self._build_refuel_model()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 429, in _build_refuel_model
+    model.fuel_consumption = Constraint(model.V, model.N, model.N, rule=fuel_consumption)
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 571, in __setattr__
+    self.add_component(name, val)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 1101, in add_component
+    val.construct(data)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\constraint.py", line 722, in construct
+    self._setitem_when_not_present(index, rule(block, index))
+                                          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\initializer.py", line 349, in __call__
+    return self._fcn(parent, *idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 427, in fuel_consumption
+    return m.fuel_level[v,j] == m.fuel_level[v,i] - m.distance[i,j] + sum(m.r[v,e] for e in m.S if m.y[v,i,e])
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 427, in <genexpr>
+    return m.fuel_level[v,j] == m.fuel_level[v,i] - m.distance[i,j] + sum(m.r[v,e] for e in m.S if m.y[v,i,e])
+                                                                                                   ~~~^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\expr\numeric_expr.py", line 319, in __bool__
+    raise PyomoException(
+pyomo.common.errors.PyomoException: Cannot convert non-constant Pyomo numeric value (y[V0,D1,S0]) to bool.
+This error is usually caused by using a Var, unit, or mutable Param in a
+Boolean context such as an "if" statement. For example,
+    >>> m.x = Var()
+    >>> if not m.x:
+    ...     pass
+would cause this exception.
+2025-05-08 23:14:02,976 - __main__ - INFO - 
+==================================================
+2025-05-08 23:14:02,976 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:14:02,977 - __main__ - INFO - ==================================================
+2025-05-08 23:14:02,977 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:03.561615
+2025-05-08 23:15:08,119 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:15:08,120 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:15:08,128 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:15:08,128 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:15:08,154 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:15:08,693 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:15:09,270 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.576401
+2025-05-08 23:15:09,284 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:15:09,383 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:15:09,383 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:15:09,384 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:15:09,395 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:15:09,396 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:15:09,425 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:15:10,216 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:15:10,538 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:421)
+2025-05-08 23:15:10,896 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:15:11,101 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.204111
+2025-05-08 23:15:11,102 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,S0,D1]
+2025-05-08 23:15:11,104 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V1,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V1,S0,D1]
+2025-05-08 23:15:11,106 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V2,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V2,S0,D1]
+2025-05-08 23:15:11,108 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V3,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V3,S0,D1]
+2025-05-08 23:15:11,111 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V4,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V4,S0,D1]
+2025-05-08 23:15:11,115 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso2.csv
+2025-05-08 23:15:11,207 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso2.html
+2025-05-08 23:15:11,207 - __main__ - INFO - Caso 2 completado con Èxito
+2025-05-08 23:15:11,208 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:15:11,220 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:15:11,221 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:15:11,245 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:15:11,892 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:15:12,324 - __main__ - ERROR - Error procesando caso 3: 'ToNode'
+Traceback (most recent call last):
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'ToNode'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 859, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 453, in _build_toll_model
+    toll_arcs = [(row['FromNode'], row['ToNode']) for _, row in self.tolls.iterrows()]
+                                   ~~~^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'ToNode'
+2025-05-08 23:15:12,332 - __main__ - INFO - 
+==================================================
+2025-05-08 23:15:12,333 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:15:12,333 - __main__ - INFO - ==================================================
+2025-05-08 23:15:12,334 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:04.216521
+2025-05-08 23:16:45,512 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:16:45,513 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:16:45,522 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:16:45,522 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:16:45,547 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:16:46,092 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:16:46,598 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.506312
+2025-05-08 23:16:46,611 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:16:46,711 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:16:46,712 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:16:46,712 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:16:46,721 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:16:46,721 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:16:46,747 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:16:47,549 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:16:47,862 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:421)
+2025-05-08 23:16:48,227 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:16:48,434 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.206184
+2025-05-08 23:16:48,435 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,S0,D1]
+2025-05-08 23:16:48,438 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V1,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V1,S0,D1]
+2025-05-08 23:16:48,441 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V2,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V2,S0,D1]
+2025-05-08 23:16:48,444 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V3,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V3,S0,D1]
+2025-05-08 23:16:48,446 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V4,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V4,S0,D1]
+2025-05-08 23:16:48,450 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso2.csv
+2025-05-08 23:16:48,545 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso2.html
+2025-05-08 23:16:48,546 - __main__ - INFO - Caso 2 completado con Èxito
+2025-05-08 23:16:48,546 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:16:48,557 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:16:48,557 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:16:48,583 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:16:49,232 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:16:49,698 - __main__ - ERROR - Error procesando caso 3: 'NodeID'
+Traceback (most recent call last):
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'NodeID'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 873, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 461, in _build_toll_model
+    to_node = row['ToNode'] if 'ToNode' in row else row['NodeID']
+                                                    ~~~^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'NodeID'
+2025-05-08 23:16:49,706 - __main__ - INFO - 
+==================================================
+2025-05-08 23:16:49,706 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:16:49,706 - __main__ - INFO - ==================================================
+2025-05-08 23:16:49,707 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:04.195354
+2025-05-08 23:17:41,699 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:17:41,699 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:17:41,707 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:17:41,707 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:17:41,746 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:17:42,562 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:17:43,128 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.565201
+2025-05-08 23:17:43,145 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:17:43,246 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:17:43,247 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:17:43,247 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:17:43,257 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:17:43,258 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:17:43,285 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:17:44,143 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:17:44,507 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:421)
+2025-05-08 23:17:44,830 - pyomo.core - WARNING - Implicitly replacing the Component attribute departure (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:17:44,832 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:17:45,049 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.217113
+2025-05-08 23:17:45,051 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,S0,D1]
+2025-05-08 23:17:45,053 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V1,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V1,S0,D1]
+2025-05-08 23:17:45,055 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V2,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V2,S0,D1]
+2025-05-08 23:17:45,057 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V3,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V3,S0,D1]
+2025-05-08 23:17:45,059 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V4,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V4,S0,D1]
+2025-05-08 23:17:45,065 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso2.csv
+2025-05-08 23:17:45,179 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso2.html
+2025-05-08 23:17:45,180 - __main__ - INFO - Caso 2 completado con Èxito
+2025-05-08 23:17:45,180 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:17:45,194 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:17:45,194 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:17:45,226 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:17:45,954 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:17:46,413 - pyomo.core - WARNING - Implicitly replacing the Component attribute departure (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:17:46,420 - pyomo.core.base.param - WARNING - DEPRECATED: Param 'toll_base' declared with an implicit domain of
+'Any'. The default domain for Param objects is 'Any'.  However, we
+will be changing that default to 'Reals' in the future.  If you really
+intend the domain of this Paramto be 'Any', you can suppress this
+warning by explicitly specifying 'within=Any' to the Param
+constructor.  (deprecated in 5.6.9, will be removed in (or after) 6.0)
+(called from C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py:718)
+2025-05-08 23:17:46,422 - pyomo.core.base.param - WARNING - DEPRECATED: Param 'toll_var' declared with an implicit domain of
+'Any'. The default domain for Param objects is 'Any'.  However, we
+will be changing that default to 'Reals' in the future.  If you really
+intend the domain of this Paramto be 'Any', you can suppress this
+warning by explicitly specifying 'within=Any' to the Param
+constructor.  (deprecated in 5.6.9, will be removed in (or after) 6.0)
+(called from C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py:718)
+2025-05-08 23:17:46,428 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:17:46,448 - pyomo.core - ERROR - Rule failed when generating expression for Objective obj with index None:
+KeyError: "Index '('V0', 1, 1)' is not valid for indexed component 'x'"
+2025-05-08 23:17:46,448 - pyomo.core - ERROR - Constructing component 'obj' from data=None failed:
+    KeyError: "Index '('V0', 1, 1)' is not valid for indexed component 'x'"
+2025-05-08 23:17:46,449 - __main__ - ERROR - Error procesando caso 3: "Index '('V0', 1, 1)' is not valid for indexed component 'x'"
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 883, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 504, in _build_toll_model
+    model.obj = Objective(rule=total_cost_with_tolls, sense=minimize)
+    ^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 601, in __setattr__
+    self.add_component(name, val)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 1101, in add_component
+    val.construct(data)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\objective.py", line 336, in construct
+    ans = self._setitem_when_not_present(index, rule(block, index))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\initializer.py", line 485, in __call__
+    return self._fcn(parent)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 500, in total_cost_with_tolls
+    toll_cost = sum((m.toll_base[i,j] + m.toll_var[i,j] * m.u[v]) * m.x[v,i,j]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 500, in <genexpr>
+    toll_cost = sum((m.toll_base[i,j] + m.toll_var[i,j] * m.u[v]) * m.x[v,i,j]
+                                                                   ~~~^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\var.py", line 1001, in __getitem__
+    return super().__getitem__(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 648, in __getitem__
+    validated_index = self._validate_index(index)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 870, in _validate_index
+    raise KeyError(
+KeyError: "Index '('V0', 1, 1)' is not valid for indexed component 'x'"
+2025-05-08 23:17:46,459 - __main__ - INFO - 
+==================================================
+2025-05-08 23:17:46,460 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:17:46,460 - __main__ - INFO - ==================================================
+2025-05-08 23:17:46,461 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:04.763532
+2025-05-08 23:18:25,410 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:18:25,411 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:18:25,420 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:18:25,420 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:18:25,448 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:18:26,070 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:18:26,677 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.605764
+2025-05-08 23:18:26,694 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:18:26,812 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:18:26,812 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:18:26,813 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:18:26,822 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:18:26,823 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:18:26,853 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:18:27,830 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:18:28,255 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:421)
+2025-05-08 23:18:28,579 - pyomo.core - WARNING - Implicitly replacing the Component attribute departure (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:18:28,585 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:18:28,805 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.219064
+2025-05-08 23:18:28,806 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V0,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V0,S0,D1]
+2025-05-08 23:18:28,808 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V1,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V1,S0,D1]
+2025-05-08 23:18:28,810 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V2,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V2,S0,D1]
+2025-05-08 23:18:28,811 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V3,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V3,S0,D1]
+2025-05-08 23:18:28,813 - pyomo.common.numeric_types - ERROR - evaluating object as numeric value: x[V4,S0,D1]
+    (object: <class 'pyomo.core.base.var.VarData'>)
+No value for uninitialized NumericValue object x[V4,S0,D1]
+2025-05-08 23:18:28,819 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso2.csv
+2025-05-08 23:18:28,913 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso2.html
+2025-05-08 23:18:28,913 - __main__ - INFO - Caso 2 completado con Èxito
+2025-05-08 23:18:28,913 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:18:28,926 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:18:28,926 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:18:28,951 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:18:29,624 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:18:30,111 - pyomo.core - WARNING - Implicitly replacing the Component attribute departure (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:18:30,121 - pyomo.core - ERROR - Rule failed for Param 'toll_base' with index (5, 5):
+ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:18:30,122 - pyomo.core - ERROR - Constructing component 'toll_base' from data=None failed:
+    ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:18:30,123 - __main__ - ERROR - Error procesando caso 3: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 889, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 488, in _build_toll_model
+    model.toll_base = Param(model.T, initialize=toll_base, within=NonNegativeReals)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 571, in __setattr__
+    self.add_component(name, val)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 1101, in add_component
+    val.construct(data)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 850, in construct
+    self._construct_from_rule_using_setitem()
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 772, in _construct_from_rule_using_setitem
+    self[index] = rule(block, index)
+    ~~~~^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 718, in __setitem__
+    return self._setitem_when_not_present(index, val)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 759, in _setitem_when_not_present
+    self._validate_value(index, value, _check_domain)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 775, in _validate_value
+    raise ValueError(
+ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:18:30,130 - __main__ - INFO - 
+==================================================
+2025-05-08 23:18:30,131 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:18:30,131 - __main__ - INFO - ==================================================
+2025-05-08 23:18:30,132 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:04.722066
+2025-05-08 23:21:02,769 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:21:02,769 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:21:02,784 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:21:02,784 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:21:02,818 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:21:03,597 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:21:04,551 - __main__ - WARNING - SoluciÛn no Ûptima: infeasible
+2025-05-08 23:21:04,551 - __main__ - WARNING - Caso 1 no obtuvo soluciÛn Ûptima
+2025-05-08 23:21:04,552 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:21:04,572 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:21:04,572 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:21:04,620 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:21:05,943 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:21:06,452 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:430)
+2025-05-08 23:21:06,755 - pyomo.core - WARNING - Implicitly replacing the Component attribute departure (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:21:06,757 - pyomo.core - WARNING - Implicitly replacing the Component attribute return_constraint (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:21:06,764 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:21:07,408 - __main__ - WARNING - SoluciÛn no Ûptima: infeasible
+2025-05-08 23:21:07,408 - __main__ - WARNING - Caso 2 no obtuvo soluciÛn Ûptima
+2025-05-08 23:21:07,409 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:21:07,423 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:21:07,424 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:21:07,474 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:21:08,454 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:21:08,870 - pyomo.core - WARNING - Implicitly replacing the Component attribute departure (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:21:08,872 - pyomo.core - WARNING - Implicitly replacing the Component attribute return_constraint (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:21:08,895 - pyomo.core - ERROR - Rule failed for Param 'toll_base' with index (5, 5):
+ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:21:08,897 - pyomo.core - ERROR - Constructing component 'toll_base' from data=None failed:
+    ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:21:08,899 - __main__ - ERROR - Error procesando caso 3: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 898, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 497, in _build_toll_model
+    model.toll_base = Param(model.T, initialize=toll_base, within=NonNegativeReals)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 571, in __setattr__
+    self.add_component(name, val)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 1101, in add_component
+    val.construct(data)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 850, in construct
+    self._construct_from_rule_using_setitem()
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 772, in _construct_from_rule_using_setitem
+    self[index] = rule(block, index)
+    ~~~~^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 718, in __setitem__
+    return self._setitem_when_not_present(index, val)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 759, in _setitem_when_not_present
+    self._validate_value(index, value, _check_domain)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 775, in _validate_value
+    raise ValueError(
+ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:21:08,909 - __main__ - INFO - 
+==================================================
+2025-05-08 23:21:08,910 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:21:08,911 - __main__ - INFO - ==================================================
+2025-05-08 23:21:08,912 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:06.144209
+2025-05-08 23:22:19,082 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:22:19,083 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:22:19,100 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:22:19,101 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:22:19,138 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:22:20,003 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:22:20,265 - __main__ - WARNING - SoluciÛn no Ûptima: infeasible
+2025-05-08 23:22:20,266 - __main__ - WARNING - Caso 1 no obtuvo soluciÛn Ûptima
+2025-05-08 23:22:20,266 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:22:20,276 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:22:20,276 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:22:20,306 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:22:21,278 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:22:21,761 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:428)
+2025-05-08 23:22:22,195 - pyomo.core - WARNING - Implicitly replacing the Component attribute departure (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:22:22,197 - pyomo.core - WARNING - Implicitly replacing the Component attribute return_constraint (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>) on block unknown with a new Component (type=<class 'pyomo.core.base.constraint.IndexedConstraint'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:22:22,203 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:22:22,426 - __main__ - WARNING - SoluciÛn no Ûptima: infeasible
+2025-05-08 23:22:22,427 - __main__ - WARNING - Caso 2 no obtuvo soluciÛn Ûptima
+2025-05-08 23:22:22,427 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:22:22,442 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:22:22,442 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:22:22,473 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:22:23,280 - __main__ - ERROR - Error procesando caso 3: 'ToNode'
+Traceback (most recent call last):
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'ToNode'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 895, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 494, in _build_toll_model
+    (self.tolls['ToNode'] == to_node)
+     ~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'ToNode'
+2025-05-08 23:22:23,290 - __main__ - INFO - 
+==================================================
+2025-05-08 23:22:23,290 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:22:23,291 - __main__ - INFO - ==================================================
+2025-05-08 23:22:23,292 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:04.211334
+2025-05-08 23:24:43,292 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:24:43,292 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:24:43,303 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:24:43,304 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:24:43,340 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:24:43,979 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:24:44,265 - __main__ - WARNING - SoluciÛn no Ûptima: infeasible
+2025-05-08 23:24:44,265 - __main__ - WARNING - Caso 1 no obtuvo soluciÛn Ûptima
+2025-05-08 23:24:44,265 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:24:44,276 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:24:44,276 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:24:44,308 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:24:45,221 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:24:45,596 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:434)
+2025-05-08 23:24:45,855 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:24:46,010 - __main__ - WARNING - SoluciÛn no Ûptima: infeasible
+2025-05-08 23:24:46,011 - __main__ - WARNING - Caso 2 no obtuvo soluciÛn Ûptima
+2025-05-08 23:24:46,011 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:24:46,022 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:24:46,022 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:24:46,053 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:24:46,691 - pyomo.core - ERROR - Rule failed for Param 'toll_base' with index (5, 5):
+ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:24:46,692 - pyomo.core - ERROR - Constructing component 'toll_base' from data=None failed:
+    ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:24:46,693 - __main__ - ERROR - Error procesando caso 3: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 880, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 481, in _build_toll_model
+    model.toll_base = Param(model.T, initialize=toll_base, within=NonNegativeReals)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 571, in __setattr__
+    self.add_component(name, val)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 1101, in add_component
+    val.construct(data)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 850, in construct
+    self._construct_from_rule_using_setitem()
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 772, in _construct_from_rule_using_setitem
+    self[index] = rule(block, index)
+    ~~~~^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 718, in __setitem__
+    return self._setitem_when_not_present(index, val)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 759, in _setitem_when_not_present
+    self._validate_value(index, value, _check_domain)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\param.py", line 775, in _validate_value
+    raise ValueError(
+ValueError: Invalid parameter value: toll_base[(5, 5)] = 'nan', value type=<class 'float'>.
+	Value not in parameter domain NonNegativeReals
+2025-05-08 23:24:46,701 - __main__ - INFO - 
+==================================================
+2025-05-08 23:24:46,702 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:24:46,702 - __main__ - INFO - ==================================================
+2025-05-08 23:24:46,703 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:03.411539
+2025-05-08 23:25:46,223 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:25:46,224 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:25:46,232 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:25:46,233 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:25:46,259 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:25:46,775 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:25:47,541 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.765571
+2025-05-08 23:25:47,557 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:25:47,669 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:25:47,669 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:25:47,669 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:25:47,680 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:25:47,681 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:25:47,707 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:25:48,523 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:25:48,874 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:426)
+2025-05-08 23:25:49,114 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:25:49,317 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.202177
+2025-05-08 23:25:49,333 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso2.csv
+2025-05-08 23:25:49,436 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso2.html
+2025-05-08 23:25:49,437 - __main__ - INFO - Caso 2 completado con Èxito
+2025-05-08 23:25:49,437 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:25:49,449 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:25:49,449 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:25:49,479 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:25:50,101 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:25:50,120 - pyomo.core - ERROR - Rule failed when generating expression for Objective obj with index None:
+KeyError: "Index '('V0', 1, 1)' is not valid for indexed component 'x'"
+2025-05-08 23:25:50,121 - pyomo.core - ERROR - Constructing component 'obj' from data=None failed:
+    KeyError: "Index '('V0', 1, 1)' is not valid for indexed component 'x'"
+2025-05-08 23:25:50,121 - __main__ - ERROR - Error procesando caso 3: "Index '('V0', 1, 1)' is not valid for indexed component 'x'"
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 868, in main
+    optimizer.build_model(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 319, in build_model
+    self._build_toll_model()
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 495, in _build_toll_model
+    model.obj = Objective(rule=total_cost_with_tolls, sense=minimize)
+    ^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 601, in __setattr__
+    self.add_component(name, val)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\block.py", line 1101, in add_component
+    val.construct(data)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\objective.py", line 336, in construct
+    ans = self._setitem_when_not_present(index, rule(block, index))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\initializer.py", line 485, in __call__
+    return self._fcn(parent)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 492, in total_cost_with_tolls
+    toll_cost = sum((m.toll_base[i,j] + m.toll_var[i,j] * m.u[v]) * m.x[v,i,j]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 492, in <genexpr>
+    toll_cost = sum((m.toll_base[i,j] + m.toll_var[i,j] * m.u[v]) * m.x[v,i,j]
+                                                                   ~~~^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\var.py", line 1001, in __getitem__
+    return super().__getitem__(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 648, in __getitem__
+    validated_index = self._validate_index(index)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pyomo\core\base\indexed_component.py", line 870, in _validate_index
+    raise KeyError(
+KeyError: "Index '('V0', 1, 1)' is not valid for indexed component 'x'"
+2025-05-08 23:25:50,134 - __main__ - INFO - 
+==================================================
+2025-05-08 23:25:50,135 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:25:50,137 - __main__ - INFO - ==================================================
+2025-05-08 23:25:50,138 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:03.914368
+2025-05-08 23:26:25,789 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:26:25,790 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:26:25,798 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:26:25,798 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:26:25,827 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:26:26,328 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:26:27,066 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.736613
+2025-05-08 23:26:27,084 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:26:27,199 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:26:27,199 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:26:27,200 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:26:27,209 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:26:27,209 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:26:27,234 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:26:28,095 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:26:28,485 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:426)
+2025-05-08 23:26:28,723 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:26:28,933 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.209469
+2025-05-08 23:26:28,953 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso2.csv
+2025-05-08 23:26:29,053 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso2.html
+2025-05-08 23:26:29,054 - __main__ - INFO - Caso 2 completado con Èxito
+2025-05-08 23:26:29,054 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:26:29,066 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:26:29,066 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:26:29,092 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:26:29,715 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:26:29,738 - __main__ - INFO - 
+========================================
+Resolviendo caso 3 (Con Peajes y Peso)
+========================================
+2025-05-08 23:26:30,073 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.334289
+2025-05-08 23:26:30,086 - __main__ - ERROR - Error procesando caso 3: "['ToNode'] not in index"
+Traceback (most recent call last):
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 871, in main
+    optimizer.generate_verification_file(case)
+  File "c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py", line 721, in generate_verification_file
+    toll_points = [n for n in route['path'] if any(n in pair for pair in self.tolls[['FromNode', 'ToNode']].values)]
+                                                                         ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "C:\Users\iStork\anaconda3\Lib\site-packages\pandas\core\indexes\base.py", line 6252, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['ToNode'] not in index"
+2025-05-08 23:26:30,093 - __main__ - INFO - 
+==================================================
+2025-05-08 23:26:30,094 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:26:30,094 - __main__ - INFO - ==================================================
+2025-05-08 23:26:30,095 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:04.306842
+2025-05-08 23:28:52,001 - __main__ - INFO - Cargada cachÈ con 600 entradas
+2025-05-08 23:28:52,001 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 1
+========================================
+2025-05-08 23:28:52,011 - __main__ - INFO - Datos cargados para caso 1
+2025-05-08 23:28:52,012 - __main__ - INFO - Construyendo modelo para caso 1
+2025-05-08 23:28:52,040 - __main__ - INFO - Calculando matriz para 25 nodos...
+2025-05-08 23:28:52,675 - __main__ - INFO - 
+========================================
+Resolviendo caso 1 (CVRP Est·ndar)
+========================================
+2025-05-08 23:28:53,475 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.798202
+2025-05-08 23:28:53,494 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso1.csv
+2025-05-08 23:28:53,593 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso1.html
+2025-05-08 23:28:53,593 - __main__ - INFO - Caso 1 completado con Èxito
+2025-05-08 23:28:53,594 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 2
+========================================
+2025-05-08 23:28:53,604 - __main__ - INFO - Datos cargados para caso 2
+2025-05-08 23:28:53,605 - __main__ - INFO - Construyendo modelo para caso 2
+2025-05-08 23:28:53,631 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:28:54,431 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:28:54,837 - pyomo.core.base.set - WARNING - DEPRECATED: Using __getitem__ to return a set value from its (ordered)
+position is deprecated.  Please use at()  (deprecated in 6.1, will be
+removed in (or after) 7.0)
+(called from c:\Users\iStork\Desktop\Proyecto-Etapa-2\proy2caseC.py:426)
+2025-05-08 23:28:55,089 - __main__ - INFO - 
+========================================
+Resolviendo caso 2 (Con Recarga)
+========================================
+2025-05-08 23:28:55,287 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.196561
+2025-05-08 23:28:55,302 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso2.csv
+2025-05-08 23:28:55,418 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso2.html
+2025-05-08 23:28:55,418 - __main__ - INFO - Caso 2 completado con Èxito
+2025-05-08 23:28:55,420 - __main__ - INFO - 
+========================================
+PROCESANDO CASO 3
+========================================
+2025-05-08 23:28:55,432 - __main__ - INFO - Datos cargados para caso 3
+2025-05-08 23:28:55,432 - __main__ - INFO - Construyendo modelo para caso 3
+2025-05-08 23:28:55,460 - __main__ - INFO - Calculando matriz para 27 nodos...
+2025-05-08 23:28:56,136 - pyomo.core - WARNING - Implicitly replacing the Component attribute obj (type=<class 'pyomo.core.base.objective.ScalarObjective'>) on block unknown with a new Component (type=<class 'pyomo.core.base.objective.ScalarObjective'>).
+This is usually indicative of a modelling error.
+To avoid this warning, use block.del_component() and block.add_component().
+2025-05-08 23:28:56,153 - __main__ - INFO - 
+========================================
+Resolviendo caso 3 (Con Peajes y Peso)
+========================================
+2025-05-08 23:28:56,543 - __main__ - INFO - SoluciÛn Ûptima encontrada en 0:00:00.389345
+2025-05-08 23:28:56,593 - __main__ - INFO - Archivo de verificaciÛn generado: output\verificacion_caso3.csv
+2025-05-08 23:28:56,704 - __main__ - INFO - Mapa de rutas generado: output\rutas_caso3.html
+2025-05-08 23:28:56,704 - __main__ - INFO - Caso 3 completado con Èxito
+2025-05-08 23:28:56,705 - __main__ - INFO - 
+==================================================
+2025-05-08 23:28:56,705 - __main__ - INFO -                 PROCESO COMPLETADO                
+2025-05-08 23:28:56,705 - __main__ - INFO - ==================================================
+2025-05-08 23:28:56,706 - __main__ - INFO - 
+Tiempo total de ejecuciÛn: 0:00:04.705895

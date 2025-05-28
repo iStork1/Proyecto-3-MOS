@@ -1,0 +1,5 @@
+TotalDistance(km): 124.55
+TotalLoad(kg): 377.0
+VehiclesUsed: 8/8
+AvgDistancePerVehicle: 15.57
+AvgLoadPerVehicle: 47.1
