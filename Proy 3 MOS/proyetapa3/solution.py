@@ -46,7 +46,11 @@ class CVRPSolution:
         return [[0, client['id'], 0] for client in self.clients]
     
     def calculate_fitness(self) -> float:
-        """Calcula el fitness total considerando todos los factores."""
+        """Calcula el fitness total considerando todos los factores y penalizaciones."""
+        if not self.is_valid():
+            # Penalización fuerte por solución inválida (e.g., exceder capacidad)
+            return float('inf')
+            
         total_cost = 0
         
         for route in self.routes:
@@ -92,20 +96,54 @@ class CVRPSolution:
         return total_fuel_cost
     
     def _calculate_toll_cost(self, route: List[int]) -> float:
-        """Calcula el costo de peajes para una ruta."""
+        """Calcula el costo de peajes para una ruta, incluyendo costo variable por carga."""
         if not self.tolls:
             return 0.0
             
         total_toll_cost = 0
+        current_load = sum(self._get_demand(c) for c in route[1:-1]) # Carga inicial al salir del depósito
+        
         for i in range(len(route)-1):
             from_id = route[i]
             to_id = route[i+1]
             
-            # Buscar el peaje entre estos nodos
-            toll_key = (from_id, to_id)
-            if toll_key in self.tolls:
-                total_toll_cost += self.tolls[toll_key]
+            # Si nos movemos de un cliente, la carga disminuye
+            if from_id != 0:
+                 try:
+                     # Encontrar el cliente en la lista self.clients
+                     client_departing = next(c for c in self.clients if c['id'] == from_id)
+                     current_load -= client_departing['demand']
+                 except StopIteration:
+                      # Esto no debería pasar si from_id es un cliente válido
+                      pass
             
+            # Buscar el peaje entre estos nodos
+            # Las claves de peaje en self.tolls son (FromNode, ToNode)
+            toll_key_forward = (from_id, to_id)
+            toll_key_backward = (to_id, from_id) # Considerar peajes en ambos sentidos si existen
+            
+            toll_data = None
+            if toll_key_forward in self.tolls:
+                toll_data = self.tolls[toll_key_forward]
+            elif toll_key_backward in self.tolls: # Si el peaje está definido en sentido contrario
+                toll_data = self.tolls[toll_key_backward]
+            
+            if toll_data:
+                # toll_data es un diccionario con BaseFee y VariableFee
+                base_fee = toll_data.get('BaseFee', 0.0)
+                variable_fee = toll_data.get('VariableFee', 0.0)
+                
+                # Usar la carga *antes* de llegar al próximo nodo para el cálculo del peaje en el segmento actual
+                # Si el peaje se aplica *al entrar* al segmento (from_id -> to_id), se usa la carga saliendo de from_id
+                # Asumimos que el costo variable se aplica a la carga actual al pasar por el punto de peaje
+                # Si from_id es el depósito (0), la carga inicial es la total de la ruta
+                load_for_toll = current_load if from_id != 0 else sum(self._get_demand(c) for c in route[1:-1])
+
+                total_toll_cost += base_fee + variable_fee * max(0, load_for_toll) # Asegurar carga no negativa
+                
+            # Si llegamos a un cliente (to_id), la carga disminuirá ANTES de salir hacia el siguiente nodo
+            # La disminución de carga se maneja al inicio del próximo iteración, al salir del nodo from_id (que será el to_id actual)
+        
         return total_toll_cost
     
     def to_verification_csv(self, filename: str):

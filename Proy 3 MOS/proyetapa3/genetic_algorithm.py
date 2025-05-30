@@ -1,7 +1,7 @@
 from typing import List, Dict, Callable, Optional
 from solution import CVRPSolution
-from genetic_operators import crossover, mutation
-from local_search import local_search
+from genetic_operators import GeneticOperators
+from local_search import LocalSearch
 import random
 import numpy as np
 """
@@ -29,16 +29,45 @@ class GeneticAlgorithm:
         self.history = []
     
     def _create_initial_population(self, solution_kwargs: Dict) -> List[CVRPSolution]:
-        """Crea la población inicial."""
+        """Crea la población inicial con rutas agrupadas aleatoriamente respetando capacidad."""
         population = []
+        client_ids = [client['id'] for client in self.clients]
+        
         for _ in range(self.pop_size):
+            shuffled_clients = random.sample(client_ids, len(client_ids)) # Shuffle client IDs
+            routes = []
+            current_route = [0] # Start at depot
+            current_load = 0
+            
+            for client_id in shuffled_clients:
+                # Find client object to get demand
+                client = next(c for c in self.clients if c['id'] == client_id)
+                demand = client['demand']
+                
+                if current_load + demand <= self.vehicle_capacity:
+                    current_route.append(client_id)
+                    current_load += demand
+                else:
+                    # Finish current route and start a new one
+                    current_route.append(0) # Return to depot
+                    routes.append(current_route)
+                    current_route = [0, client_id] # Start new route with this client
+                    current_load = demand
+                    
+            # Add the last route if it's not empty
+            if len(current_route) > 1: # Check if it contains more than just the depot
+                current_route.append(0) # Return to depot
+                routes.append(current_route)
+            
             solution = CVRPSolution(
                 clients=self.clients,
                 depot=self.depot,
                 vehicle_capacity=self.vehicle_capacity,
+                routes=routes, # Use the generated routes
                 **solution_kwargs
             )
             population.append(solution)
+            
         return population
     
     def _select_parents(self, population: List[CVRPSolution]) -> List[CVRPSolution]:
@@ -56,66 +85,90 @@ class GeneticAlgorithm:
         """Ejecuta el algoritmo genético."""
         if solution_kwargs is None:
             solution_kwargs = {}
-            
+
         # Crear población inicial
         population = self._create_initial_population(solution_kwargs)
-        
+
         # Ejecutar generaciones
         for gen in range(self.generations):
             # Crear nueva población
             new_population = []
-            
-            # Elitismo: mantener la mejor solución
+
+            # Elitismo: mantener la mejor solución (copia para no modificar el original en futuras operaciones)
             best_solution = min(population, key=lambda x: x.fitness)
-            new_population.append(best_solution)
-            
+            # Añadir una copia para asegurar que la mejor solución no sea modificada in-place
+            elite_copy = CVRPSolution(
+                clients=self.clients,
+                depot=self.depot,
+                vehicle_capacity=self.vehicle_capacity,
+                routes=[route.copy() for route in best_solution.routes], # Copia profunda de las rutas
+                **solution_kwargs # Pasar los kwargs
+            )
+            new_population.append(elite_copy)
+
             # Generar resto de la población
             while len(new_population) < self.pop_size:
-                # Seleccionar padres
+                # Seleccionar padres usando torneo
                 parents = self._select_parents(population)
-                
-                # Cruzar
-                child_routes = crossover(parents[0].routes, parents[1].routes)
-                
-                # Mutar
+
+                # Cruzar para obtener dos hijos
+                child1, child2 = GeneticOperators.ordered_crossover(parents[0], parents[1], **solution_kwargs)
+
+                # Aplicar mutación con la tasa especificada a cada hijo
                 if random.random() < self.mutation_rate:
-                    child_routes = mutation(child_routes)
-                
-                # Crear nueva solución
-                child = CVRPSolution(
-                    clients=self.clients,
-                    depot=self.depot,
-                    vehicle_capacity=self.vehicle_capacity,
-                    routes=child_routes,
-                    **solution_kwargs
-                )
-                
-                # Búsqueda local
+                    child1 = GeneticOperators.swap_mutation(child1, **solution_kwargs) # Usar swap_mutation
+                    # child1 = GeneticOperators.inversion_mutation(child1, **solution_kwargs) # Opcional: usar inversion_mutation
+
+                if random.random() < self.mutation_rate:
+                    child2 = GeneticOperators.swap_mutation(child2, **solution_kwargs) # Usar swap_mutation
+                    # child2 = GeneticOperators.inversion_mutation(child2, **solution_kwargs) # Opcional: usar inversion_mutation
+
+                # Aplicar búsqueda local a los hijos con la tasa especificada
                 if random.random() < self.local_search_rate:
-                    child.routes = local_search(child.routes, child)
-                
-                new_population.append(child)
-            
-            # Actualizar población
+                     child1 = LocalSearch.two_opt(child1, **solution_kwargs) # Usar LocalSearch.two_opt
+
+                if random.random() < self.local_search_rate:
+                     child2 = LocalSearch.two_opt(child2, **solution_kwargs) # Usar LocalSearch.two_opt
+
+                # Añadir hijos a la nueva población (verificando capacidad si aplica, aunque _split_to_routes debería manejarlo)
+                # Verificar validez y añadir si es válida o si se permite un porcentaje de inválidas
+                # Por ahora, simplemente añadimos. La penalización en fitness se encarga de las inválidas.
+                new_population.append(child1)
+                if len(new_population) < self.pop_size:
+                     new_population.append(child2)
+
+            # Reemplazar la población vieja por la nueva
             population = new_population
-            
-            # Calcular estadísticas
-            best_fitness = min(p.fitness for p in population)
-            avg_fitness = sum(p.fitness for p in population) / len(population)
-            
+
+            # Calcular estadísticas para la generación actual
+            valid_solutions = [p for p in population if p.is_valid()]
+            if valid_solutions:
+                 best_fitness = min(p.fitness for p in valid_solutions)
+                 avg_fitness = sum(p.fitness for p in valid_solutions) / len(valid_solutions)
+            else:
+                 # Si no hay soluciones válidas, reportar fitness infinito
+                 best_fitness = float('inf')
+                 avg_fitness = float('inf')
+
             # Guardar en historial
             self.history.append({
                 'generation': gen,
                 'best_fitness': best_fitness,
                 'avg_fitness': avg_fitness
             })
-            
+
             # Llamar callback si existe
             if callback:
                 callback(gen, best_fitness, avg_fitness)
-        
-        # Retornar mejor solución
-        return min(population, key=lambda x: x.fitness)
+
+        # Retornar la mejor solución válida encontrada en la última generación
+        # Si no hay ninguna válida, retornamos la mejor (probablemente inf fitness)
+        valid_solutions = [p for p in population if p.is_valid()]
+        if valid_solutions:
+             return min(valid_solutions, key=lambda x: x.fitness)
+        else:
+             # Si no se encontró ninguna solución válida, retornar la mejor no válida (tendrá inf fitness)
+             return min(population, key=lambda x: x.fitness)
     
     def _initialize_population(self) -> List[CVRPSolution]:
         return [

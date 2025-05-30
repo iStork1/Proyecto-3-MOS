@@ -3,50 +3,67 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 from typing import List, Dict
+from solution import CVRPSolution
 
 class Visualizer:
     @staticmethod
-    def plot_solution(solution, title: str = "Mejor Solución"):
-        """Visualiza las rutas en un mapa."""
-        plt.figure(figsize=(10, 8))
+    def plot_solution(solution: CVRPSolution, title: str):
+        """Visualiza las rutas de la solución."""
+        plt.figure(figsize=(12, 8))
         
         # Coordenadas del depósito
-        depot_x, depot_y = solution.depot['x'], solution.depot['y']
-        plt.scatter(depot_x, depot_y, c='red', marker='s', s=100, label='Depósito')
+        depot_coords = solution._get_coords(0) # (lat, lon)
+        plt.plot(depot_coords[1], depot_coords[0], 's', color='red', markersize=10, label='Depósito') # plot (lon, lat)
         
-        # Coordenadas de clientes
-        clients_x = [c['x'] for c in solution.clients if c['id'] != 0]
-        clients_y = [c['y'] for c in solution.clients if c['id'] != 0]
-        plt.scatter(clients_x, clients_y, c='blue', label='Clientes')
-        
+        # Coordenadas de los clientes
+        client_coords = {c['id']: (c['y'], c['x']) for c in solution.clients} # {id: (lat, lon)}
+        for client_id, coords in client_coords.items():
+            plt.plot(coords[1], coords[0], 'o', color='blue', markersize=7) # plot (lon, lat)
+            plt.text(coords[1], coords[0], str(client_id), fontsize=9, ha='right')
+            
         # Dibujar rutas
-        colors = plt.cm.rainbow(np.linspace(0, 1, len(solution.routes)))
+        colors = plt.cm.get_cmap('tab10', len(solution.routes))
         for i, route in enumerate(solution.routes):
-            route_x = [depot_x if node == 0 else 
-                      next(c['x'] for c in solution.clients if c['id'] == node) for node in route]
-            route_y = [depot_y if node == 0 else 
-                      next(c['y'] for c in solution.clients if c['id'] == node) for node in route]
-            plt.plot(route_x, route_y, '--', color=colors[i], alpha=0.7, linewidth=2, label=f'Ruta {i+1}')
+            route_coords = []
+            for node_id in route:
+                if node_id == 0:
+                    route_coords.append(depot_coords)
+                else:
+                    route_coords.append(client_coords[node_id])
+            
+            # Extraer longitudes y latitudes
+            lons = [coord[1] for coord in route_coords]
+            lats = [coord[0] for coord in route_coords]
+            
+            plt.plot(lons, lats, color=colors(i), marker='o', linestyle='-', linewidth=1.5, label=f'Ruta {i+1}')
         
-        plt.title(f"{title}\nDistancia Total: {solution.fitness:.2f} km")
+        plt.title(title)
+        plt.xlabel('Longitud')
+        plt.ylabel('Latitud')
         plt.legend()
         plt.grid(True)
+        plt.axis('equal') # Asegura que las escalas de los ejes sean iguales
+        plt.tight_layout() # Ajusta el layout para evitar solapamiento
+        # plt.show() # Eliminar si solo se guarda en archivo
 
     @staticmethod
-    def plot_convergence(history: List[Dict]):
-        """Grafica la convergencia del GA."""
-        gens = [h['generation'] for h in history]
-        best = [h['best_fitness'] for h in history]
-        avg = [h['avg_fitness'] for h in history]
+    def plot_convergence(history):
+        """Visualiza la curva de convergencia (fitness a lo largo de las generaciones)."""
+        generations = [entry['generation'] for entry in history]
+        best_fitness = [entry['best_fitness'] for entry in history]
+        avg_fitness = [entry['avg_fitness'] for entry in history]
         
         plt.figure(figsize=(10, 6))
-        plt.plot(gens, best, 'b-', label='Mejor Fitness')
-        plt.plot(gens, avg, 'r--', label='Fitness Promedio')
-        plt.title("Convergencia del Algoritmo Genético")
-        plt.xlabel("Generación")
-        plt.ylabel("Distancia Total (km)")
+        plt.plot(generations, best_fitness, label='Mejor Fitness', marker='.')
+        plt.plot(generations, avg_fitness, label='Fitness Promedio', marker='.')
+        
+        plt.title('Convergencia del Algoritmo Genético')
+        plt.xlabel('Generación')
+        plt.ylabel('Fitness (km)') # Asegurar la unidad correcta
         plt.legend()
         plt.grid(True)
+        plt.tight_layout() # Ajusta el layout
+        # plt.show() # Eliminar si solo se guarda en archivo
 
     @staticmethod
     def plot_scalability(results: List[Dict]):
